@@ -30,3 +30,4 @@ The project has 4 engpoints: create an article, get all articles, get an article
 
 ## Architecture
 
+![Untitled Diagram](https://user-images.githubusercontent.com/3699136/134031504-b48f972a-8128-466a-b5f3-d98e9f575f26.jpg)
