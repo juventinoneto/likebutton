@@ -16,6 +16,10 @@ That command will generate three containers: sql1, redis and rabbitmq_management
 docker container ps // Windows
 sudo docker container ps // Linux
 ```
+In case that you don't have dotnet ef cli installer, you can install it with the command below:
+```bash
+dotnet tool install --global dotnet-ef
+```
 
 After running docker-compose, it will also be necessary to create the tables from the migrations already defined. Run the following commands:
 
