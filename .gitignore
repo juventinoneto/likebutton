@@ -1,0 +1,9 @@
+*.dll
+
+.idea/*
+
+.vscode/*
+
+*bin/
+
+*obj/
