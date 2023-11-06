@@ -4,5 +4,6 @@
   "extends": [
     "config:base"
   ],
-  "labels": ["dependencies"]
+  "labels": ["dependencies"],
+  "reviewers": ["juventinoneto"]
 }
