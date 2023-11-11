@@ -2,14 +2,13 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Application.Interfaces.DTO;
 
-namespace Application.Interfaces
+namespace Application.Interfaces;
+
+public interface IRedisService
 {
-    public interface IRedisService
-    {
-        Task Update(IList<ArticleCachedDTO> articles);
+    Task Update(IList<ArticleCachedDTO> articles);
 
-        Task<List<ArticleCachedDTO>> Read();
+    Task<List<ArticleCachedDTO>> Read();
 
-        Task<ArticleCachedDTO> ReadOne(long articleId);
-    }
+    Task<ArticleCachedDTO> ReadOne(long articleId);
 }

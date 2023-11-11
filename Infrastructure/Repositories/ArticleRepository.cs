@@ -1,35 +1,31 @@
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using Domain.Entities;
 using Domain.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
-namespace Infrastructure.Repositories
-{
-    public class ArticleRepository : BaseRepository<Article>, IArticleRepository
-    {
-        private readonly LikeButtonContext _context;
-            
-        public ArticleRepository(LikeButtonContext context) : base(context)
-        {
-            _context = context;
-        }
+namespace Infrastructure.Repositories;
 
-        public Article FindById(long id)
-        {
-            return _context
-                .Articles
-                .Include(x => x.Likes)
-                .FirstOrDefault(x => x.Id == id);
-        }
+public class ArticleRepository : BaseRepository<Article>, IArticleRepository
+{
+    private readonly LikeButtonContext _context;
         
-        public IQueryable<Article> List()
-        {
-            return _context
-                .Articles
-                .Include(x => x.Likes);
-        }
+    public ArticleRepository(LikeButtonContext context) : base(context)
+    {
+        _context = context;
+    }
+
+    public Article FindById(long id)
+    {
+        return _context
+            .Articles
+            .Include(x => x.Likes)
+            .FirstOrDefault(x => x.Id == id);
+    }
+    
+    public IQueryable<Article> List()
+    {
+        return _context
+            .Articles
+            .Include(x => x.Likes);
     }
 }

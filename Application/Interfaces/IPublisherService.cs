@@ -1,7 +1,6 @@
-namespace Application.Interfaces
+namespace Application.Interfaces;
+
+public interface IPublisherService
 {
-    public interface IPublisherService
-    {
-        void Publish(long articleId);
-    }
+    void Publish(long articleId);
 }

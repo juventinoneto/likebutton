@@ -1,14 +1,13 @@
 using MediatR;
 
-namespace Application.Commands
-{
-    public class LikeArticleCommand : IRequest<bool>
-    {
-        public long IdArticle { get; }
+namespace Application.Commands;
 
-        public LikeArticleCommand(long idArticle)
-        {
-            IdArticle = idArticle;
-        }
+public class LikeArticleCommand : IRequest<bool>
+{
+    public long IdArticle { get; }
+
+    public LikeArticleCommand(long idArticle)
+    {
+        IdArticle = idArticle;
     }
 }

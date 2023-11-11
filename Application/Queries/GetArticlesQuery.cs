@@ -2,10 +2,9 @@ using System.Collections.Generic;
 using Application.Responses;
 using MediatR;
 
-namespace Application.Queries
+namespace Application.Queries;
+
+public class GetArticlesQuery :  IRequest<ResponseBase<List<ArticleResponse>>>
 {
-    public class GetArticlesQuery :  IRequest<ResponseBase<List<ArticleResponse>>>
-    {
-        
-    }
+    
 }
