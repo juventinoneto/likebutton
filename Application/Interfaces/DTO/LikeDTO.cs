@@ -1,7 +1,6 @@
-namespace Application.Interfaces.DTO
+namespace Application.Interfaces.DTO;
+
+public class LikeDTO
 {
-    public class LikeDTO
-    {
-        public long ArticleId { get; set; }
-    }
+    public long ArticleId { get; set; }
 }

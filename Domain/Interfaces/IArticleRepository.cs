@@ -1,12 +1,11 @@
 using System.Linq;
 using Domain.Entities;
 
-namespace Domain.Interfaces
+namespace Domain.Interfaces;
+
+public interface IArticleRepository: IBaseRepository<Article>
 {
-    public interface IArticleRepository: IBaseRepository<Article>
-    {
-        Article FindById(long id);
-        
-        IQueryable<Article> List();
-    }
+    Article FindById(long id);
+    
+    IQueryable<Article> List();
 }

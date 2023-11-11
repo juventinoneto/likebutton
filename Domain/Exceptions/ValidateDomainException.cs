@@ -1,15 +1,14 @@
 using System;
 
-namespace Domain.Exceptions
+namespace Domain.Exceptions;
+
+public class ValidateDomainException : Exception
 {
-    public class ValidateDomainException : Exception
-    {
-        public ValidateDomainException() { }
+    public ValidateDomainException() { }
 
-        public ValidateDomainException(string message)
-            : base(message) { }
+    public ValidateDomainException(string message)
+        : base(message) { }
 
-        public ValidateDomainException(string message, Exception inner)
-            : base(message, inner) { }
-    }
+    public ValidateDomainException(string message, Exception inner)
+        : base(message, inner) { }
 }
