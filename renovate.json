@@ -5,5 +5,15 @@
     "config:base"
   ],
   "labels": ["dependencies"],
-  "reviewers": ["juventinoneto"]
+  "reviewers": ["juventinoneto"],
+  "lockFileMaintenance": {
+    "automerge": true
+  },
+  "patch": {
+    "automerge": true
+  },
+  "pin": {
+    "automerge": true
+  },
+  "separateMinorPatch": true
 }
