@@ -21,7 +21,7 @@ services:
       - "6379:6379" 
 
   rabitmq-management:
-    image: "rabbitmq:3-management"
+    image: "rabbitmq:4-management"
     container_name: "rabbitmq_management"
     hostname: "rabbitmq_management"
     ports: 
